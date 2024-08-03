@@ -1,0 +1,27 @@
+1)Create a Virtual Environment:
+Open a terminal and navigate to the directory where your project is located. 
+Then, create a virtual environment: 
+	python -m venv venv
+
+2)Activate the Virtual Environment:
+On Windows: 
+	venv\Scripts\activate
+
+On macOS and Linux: 
+	source venv/bin/activate
+
+
+3)Install the Required Packages:
+With the virtual environment activated, install the packages listed in requirements.txt: 
+	pip install -r requirements.txt
+
+==============================================
+create_wallets.py -- The first script to run, so it creates the wallets.
+parent_script.py -- Executes the child script. Specify the number of times you want to run the child script.
+child_script.py -- Replace the URL of the crypto you want to vote on in line 158.
+                  Replace the profile path in line 18.
+==========================================================================
+Before running the parent/child scripts, create an account in MetaMask. Do not leave it without an account.
+Set the password to Test1234!
+If you want to use another password, go to child_script.py and replace it in line 182.
+===========================================================
