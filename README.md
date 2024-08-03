@@ -12,6 +12,15 @@ These scripts are designed for creating Ethereum wallets, importing them into Me
 
 This project is for educational purposes only. The voting part of the script is intentionally incomplete to prevent use for bot automation, which is against the guidelines of the websites.
 
+## Technologies Used
+
+- **Python**
+- **Selenium**
+
+## Browser Compatibility
+
+This project is designed to work with **Mozilla Firefox**. Ensure that you have Firefox installed and properly configured, as the scripts use Firefox for interacting with MetaMask and DEXTools.
+
 ## Steps to Run the Scripts
 
 1. **Create a Virtual Environment**:
@@ -43,7 +52,8 @@ This project is for educational purposes only. The voting part of the script is 
 - **parent_script.py**: Executes the child script. Specify the number of times you want to run the child script.
 - **child_script.py**:
   - Replace the URL of the crypto you want to vote on in line 158.
-  - Replace the profile path in line 18.
+  - Replace the profile path in line 18. You can find the `profile_path` by going to Firefox and typing `about:profiles` in the address bar. Copy the root directory of the `default-release` profile and set it as the `profile_path`, making sure to replace backslashes (`\`) with forward slashes (`/`).
+  - Replace the MetaMask extension ID in line 68. You can find the MetaMask extension ID by unlocking your wallet, clicking the three dots in the top right, and expanding the view. The URL will contain the extension ID.
 
 ### MetaMask Setup
 
